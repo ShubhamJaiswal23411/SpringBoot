@@ -1,9 +1,9 @@
-package com.example.custom_annotation.example.bean_injection.service.impl;
+package com.example.custom_annotation.example.bean_injection_when_multiple_impl.service.impl;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-import com.example.custom_annotation.example.bean_injection.service.PaymentService;
+import com.example.custom_annotation.example.bean_injection_when_multiple_impl.service.PaymentService;
 
 @Primary
 @Service

@@ -1,12 +1,12 @@
-package com.example.custom_annotation.example.bean_injection.usage;
+package com.example.custom_annotation.example.bean_injection_when_multiple_impl.usage;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.custom_annotation.example.bean_injection.service.PaymentService;
+import com.example.custom_annotation.example.bean_injection_when_multiple_impl.service.PaymentService;
 
 @Service
-public class Primary {
+public class PrimaryUsage {
 
     @Autowired
     private PaymentService paymentService;

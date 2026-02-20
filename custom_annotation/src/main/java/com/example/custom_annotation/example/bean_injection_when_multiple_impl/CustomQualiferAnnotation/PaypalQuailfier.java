@@ -1,4 +1,4 @@
-package com.example.custom_annotation.example.bean_injection;
+package com.example.custom_annotation.example.bean_injection_when_multiple_impl.CustomQualiferAnnotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
