@@ -17,6 +17,15 @@ public class CustomAnnotationApplication {
 		run.getBean(CustomQualifierUsage.class).makePayment();//autowiring through custom annotation
 		run.getBean(QualifierUsage.class).makePayment();//autowiring through magic string and qualifier
 		run.getBean(PrimaryUsage.class).makePayment();//autowiring through primary
+
+
+
+		String temp = "1|23|24|";
+		String[] split = temp.split("|",0);
+		for(String s : split){
+			System.out.print(s);
+		}
+
 	}
 
 }
