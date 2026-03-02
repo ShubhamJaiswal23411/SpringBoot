@@ -23,7 +23,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class CircularDependenciesApplication {
+	/*
+		Only lazy initialization and refactoring are two valid approaches according to the spring
+		other wise if we use feild injection or setter injection in both the cases we still would get
+		error at the startup that there are circular dependencies in the project
 
+		In order to resolve them we need to have this property set in the propeties file 
+		spring.main.allow-circular-references = true
+	
+	*/
 	public static void main(String[] args) {
 		SpringApplication.run(CircularDependenciesApplication.class, args);
 	}
