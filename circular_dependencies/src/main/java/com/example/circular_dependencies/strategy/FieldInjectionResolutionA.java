@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class FieldInjectionResolutionA {
     
     
-    @Autowired
+    @Autowired  // this auto wired is necessary spring does not inject dependencies unless specifically told through autowired
     private FieldInjectionResolutionB b ;
 
 }
