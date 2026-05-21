@@ -48,7 +48,7 @@ class ParentClass {
     public static void main(String[] args) {
         Annotation[] annotations = ParentClass.class.getAnnotations();
         for (Annotation curAnnotation : annotations) {
-            System.out.println(curAnnotation.toString());
+            System.out.println("Parent Annotations : "+curAnnotation.toString());
         }
     }
 }
@@ -57,9 +57,9 @@ class ChildClass extends ParentClass {
 
     public static void main(String[] args) {
         ParentClass.main(new String[1]);
-        Annotation[] annotations = ParentClass.class.getAnnotations();
+        Annotation[] annotations = ChildClass.class.getAnnotations();
         for (Annotation curAnnotation : annotations) {
-            System.out.println(curAnnotation.toString());
+            System.out.println("Child Annotations : "+curAnnotation.toString());
         }
     }
 }
